@@ -1,0 +1,35 @@
+// Tipografías
+$font-serif: 'Courgette', serif;
+$font-sans-serif: 'Roboto', sans-serif;
+
+// Colores
+$color-accent: #A9DFBF;
+$color-text: #333;
+$color-background: #fff;
+$color-background2: #9ac466;
+$color-border: #ddd;
+$color-text-secondary: #333;
+
+// Breakpoints
+$breakpoint-sm: 600px;
+$breakpoint-md: 900px;
+$breakpoint-lg: 1200px;
+
+// Espaciado
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+
+// Funciones
+$assets: (
+  1: '1506260408121-e353d10b87c7',
+  2: '1506744038136-46273834b3fb',
+  3: '1523712999610-f77fbcfc3843',
+  4: '1501785888041-af3ef285b470'
+);
+
+@function image($key) {
+  $id: map-get($assets, $key);
+  @return url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-' + $id + '.jpg');
+}
