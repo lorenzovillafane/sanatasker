@@ -151,19 +151,19 @@
     height: 100%;
     background-size: cover;
   }
-  
   .hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-  
-    @each $asset in $assets {
-      $i: index($assets, $asset);
-      &:nth-child(#{$i}) figure {
-        background-image: image($i);
-      }
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  @each $color in ( #F1F8E8,#D8EFD3, #95D2B3, #55AD9B) {
+    $i: index(( #F1F8E8,#D8EFD3, #95D2B3, #55AD9B), $color);
+    &:nth-child(#{$i}) figure {
+      background-color: $color;
     }
   }
+}
+
   .hero-img {
   max-width: 600px;
   margin-right: 1rem;

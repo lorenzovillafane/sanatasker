@@ -1,7 +1,20 @@
 <template>
   <header :class="{ hidden: isHidden }">
+  <div class="containerHeader">
+    <div class="socialContainer"> <a href=""><img src="../assets/icons/instagram.png" alt="" class="logonone"></a>
+   <a href=""><img src="../assets/icons/linkedin.png" alt=""class="logonone"></a>
+   <a href=""><img src="../assets/icons/whatsapp.png" alt=""class="logonone"></a></div>
+    <div>
+          <img src="../assets/LOGOSANATAKER.png" alt="LOGO">
+    </div>
 
-    <img src="../assets/LOGO.png" alt="LOGO">
+  <div class="socialContainer">
+    <a href=""><img src="../assets/icons/instagram.png" alt=""></a>
+   <a href=""><img src="../assets/icons/linkedin.png" alt=""></a>
+   <a href=""><img src="../assets/icons/whatsapp.png" alt=""></a>
+  </div>
+   
+    </div>
   </header>
 </template>
 
@@ -37,7 +50,7 @@ header {
   left: 0;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(154, 196, 182, 0.8); /* Fondo semi-transparente */
+  background-color: rgba(85, 173, 155, 0.8); /* Fondo semi-transparente */
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Asegura que esté sobre todo */
@@ -47,9 +60,15 @@ header {
 header.hidden {
   transform: translateY(-100%);
 }
-
+.containerHeader{display: flex;
+justify-content: space-between;
+align-items: center;}
+.logonone{display: none;}
+.socialContainer{width: 300px;}
 header img {
   margin: 0;
-
+width: 150px;
 }
+a img{width: 50px;
+margin: 15px;}
 </style>
