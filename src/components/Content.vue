@@ -9,22 +9,34 @@
         <div class="hero-inner">
           <figure></figure>
           <div class="hero__title">
-            <template v-if="section.type === 'text-image'">
+            <template v-if="section.type === 'text-image'" id="sectionOne" >
               <img :src="section.image" alt="Imagen hero" class="hero-img" />
-              <p>{{ section.text }}</p>
+              <p id="pSectionOne">{{ section.text }}</p>
             </template>
-            <template v-else-if="section.type === 'gallery'">
-              <div class="gallery">
+            <template v-if="section.type === 'text-image2'" id="sectionTwo" >
+             <div><h3>Sobre Mi</h3>
+                <p id="pSectionTwo">{{ section.text }}</p>
+              </div>
+               <img :src="section.image" alt="Imagen hero" class="hero-img2" />
+              
+              
+            </template>
+            <template v-else-if="section.type === 'gallery'"   >
+              <div id="galleryContainer">
+                   <h3>Servicios que ofrezco</h3>
+              <div class="gallery"> 
                 <div v-for="(item, idx) in section.items" :key="idx">
                   <img :src="item.image" :alt="item.title" />
                   <p>{{ item.title }}</p>
                 </div>
               </div>
+              </div>
+          
             </template>
             <template v-else-if="section.type === 'testimonial'">
               <blockquote>{{ section.quote }}</blockquote>
               <img :src="section.image" alt="Imagen hero" class="hero-img" />
-              <p>{{ section.author }}</p>
+              <p id="pSectionFour">{{ section.author }}</p>
             </template>
           </div>
         </div>
@@ -33,24 +45,23 @@
       <!-- Sección de contenido original -->
       <section class="content">
         <article class="content__inner">
-          <h1 class="content__title">Some Happy Little Text</h1>
-          <h3 class="content__author">By Bob Ross</h3>
+          <h1 class="content__title">Contactame!</h1>
+          <h3 class="content__author">Tu primer consulta es gratuita</h3>
   
-          <p>
-            A thin paint will stick to a thick paint. The shadows are just like
-            the highlights, but we're going in the opposite direction. When you
-            do it your way you can go anywhere you choose.
-          </p>
-  
-          <blockquote>When you do it your way you can go anywhere you choose.</blockquote>
-  
-          <p>
-            Let's build some happy little clouds up here. Everyone is going to
-            see things differently - and that's the way it should be. Let's do
-            that again. A tree needs to be your friend if you're going to paint
-            him. That's why I paint - because I can create the kind of world I
-            want - and I can make this world as happy as I want it.
-          </p>
+          <div class="footer__form">
+      
+      <form>
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Tu correo" />
+        <textarea placeholder="Introduzca un mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="footer__socials">
+        <a href="#" target="_blank">Linkedin</a>
+        <a href="#" target="_blank">whatsapp</a>
+        <a href="#" target="_blank">Instagram</a>
+      </div>
+    </div>
         </article>
       </section>
     </div>
@@ -68,9 +79,9 @@
             text: "Delegar puede ser una forma sencilla de encontrar paz mental",
           },
           {
-            type: "text-image",
-            image: "src/assets/JULI.png",
-            text: "Texto diferente junto a la segunda imagen.",
+            type: "text-image2",
+            image: "src/assets/JULI-removebg-preview.png",
+            text: "Hola, soy Juli creadora de Sanatasker. Este proyecto surge de la idea de ayudarte a aliviar el peso de vivir con una enfermedad crónica o acompañar a alguien en esta situación, de modo que la responsabilidad que esto implica no sea una carga adicional en tu vida, ni en la de quienes te rodean. Mi compromiso es brindarte apoyo desde la organización y la empatía para centrarte en lo que realmente importa y sentirte tranquilo en cada paso del camino.",
           },
           {
             type: "gallery",
@@ -95,6 +106,7 @@
   
   <style lang="scss" scoped>
   @import url("https://fonts.googleapis.com/css?family=Courgette|Roboto");
+
   
   $ff-serif: "Courgette", serif;
   $ff-sans-serif: "Roboto", sans-serif;
@@ -112,16 +124,94 @@
     @return url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-" + $id + ".jpg");
   }
   
+  .footer__form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-family: 'Courgette', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 0.75rem 1.5rem;
+        background-color: #a9dfbf;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #87c99e;
+        }
+      }
+    }
+
+    .footer__socials {
+      margin-top: 2rem;
+
+      a {
+        margin: 0 0.5rem;
+        font-size: 1.25rem;
+        color: #666;
+        text-decoration: none;
+
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+
+
+
+
   * {
     box-sizing: border-box;
+    
+    font-family: $ff-serif;
   }
   
   p {
-    font-family: $ff-sans-serif;
-    font-size: 1.25rem;
+    font-family: $ff-serif;
+    font-size: 2.25rem;
     line-height: 1.5;
   }
-  
+
+  #pSectionOne{   
+    margin-top: 50px;
+    font-size: 7.25rem;
+    width: 1000px;
+  color: #156669;}
+  #pSectionTwo{  
+     font-size: 2.3rem;
+    width: 900px;
+    margin: 10px;
+    
+    font-family: $ff-sans-serif;
+    color: #55AD9B;}
+    h3{color: #156669;
+      margin-top: 0px;}
+  #sectionTwo{ display: flex;
+  justify-content: flex-start;}
   blockquote {
     position: relative;
     padding-left: 1.5rem;
@@ -160,6 +250,7 @@
     $i: index(( #F1F8E8,#D8EFD3, #95D2B3, #55AD9B), $color);
     &:nth-child(#{$i}) figure {
       background-color: $color;
+      
     }
   }
 }
@@ -167,25 +258,42 @@
   .hero-img {
   max-width: 600px;
   margin-right: 1rem;
+  margin-top: 50px;
+}
+.hero-img2 {
+  width: 500px;
+  margin-left: 4rem;
 }
 
 .gallery {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 00px;
   align-items: center;
+  width: 100%;
   img {
     display: block;
-    max-width:400px;
+    max-width:500px;
     margin: 0 auto;
     border-radius: 5px;
+    height: 400px;
   }
   p {
     text-align: center;
-    margin-top: 0.5rem;
+    font-family: $ff-serif;
+    margin-top: 0.9rem;
+    color: #156669;
+    font-size: 2.6rem;
   }
 }
 
-
+#galleryContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
   
   .hero-inner {
     position: absolute;
@@ -207,7 +315,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 1rem;
     width: 100%;
     height: 100%;
     color: white;
@@ -254,13 +361,13 @@
   
   .content__title {
     font-family: $ff-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.25;
     letter-spacing: -0.125rem;
     text-align: center;
   
     @media (min-width: 600px) {
-      font-size: 4rem;
+      font-size: 5rem;
     }
   }
   
@@ -271,7 +378,7 @@
     margin-bottom: 4rem;
     width: 100%;
     font-family: $ff-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: -0.125rem;
     text-align: center;
   

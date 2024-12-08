@@ -67,7 +67,7 @@ align-items: center;}
 .socialContainer{width: 300px;}
 header img {
   margin: 0;
-width: 150px;
+width: 120px;
 }
 a img{width: 50px;
 margin: 15px;}
