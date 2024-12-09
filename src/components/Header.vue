@@ -57,9 +57,6 @@ header {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-header.hidden {
-  transform: translateY(-100%);
-}
 .containerHeader{display: flex;
 justify-content: space-between;
 align-items: center;}
