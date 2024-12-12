@@ -251,6 +251,7 @@ transform: scale(1.1);
     color: #156669;
     
   }
+
   
   /* --------------------
      Estilo del Footer
@@ -336,9 +337,9 @@ transform: scale(1.1);
   }
   
   #pSectionTwo {
-    font-size: 2.3rem;
+    font-size: 2rem;
     width: 900px;
-    margin: 10px;
+    margin: 0px;
     font-family: $ff-sans-serif;
     color: #55AD9B;
   }
@@ -347,6 +348,12 @@ transform: scale(1.1);
     display: flex;
     justify-content: flex-start;
   }
+  #sectionTwo h3{
+ font-size: 3rem;
+  }
+  h3{font-size: 5.5rem;
+  color:#156669}
+
 
   
   /* --------------------

@@ -27,7 +27,7 @@
     methods: {
       setComponentBasedOnWindowSize() {
        
-        this.currentComponent = window.innerWidth >= 780 ? Content : Mobile;
+        this.currentComponent = window.innerWidth >= 1060 ? Content : Mobile;
       },
     },
   };

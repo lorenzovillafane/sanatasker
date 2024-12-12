@@ -115,7 +115,7 @@
       font-style: normal;
     }
   h5{ font-family: 'Roca One Thin';
-  color: #D8EFD3;
+  color: #55AD9B;
   font-size: 2rem;}
   header {
     display: flex;
@@ -182,7 +182,7 @@ align-items: center;
 text-align: center;}
 #sobremi p{color: #55AD9B;
 font-size: 1.5rem;
-padding: 0% 15% 0% 15%;
+padding: 0% 10% 0% 10%;
 
 
 }
@@ -381,6 +381,7 @@ display: flex;
   }
 }
 .content__author{color: #156669;}
+
 @media (max-width: 520px) {
 .content__title{font-size: 2.5rem;}
 .content__author{font-size: 1.5rem;}
