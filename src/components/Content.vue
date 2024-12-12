@@ -2,9 +2,9 @@
    <header :class="{ hidden: isHidden }">
   <div class="containerHeader">
     <div class="socialContainer"> 
-  <a href="https://www.instagram.com/sanatasker/"><img src="../assets/icons/instagram.png" alt="" ></a>
-   <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="../assets/icons/linkedin.png" alt=""class="logonone"></a>
-   <a href="https://wa.link/7mp5ai" target="_blank"><img src="../assets/icons/whatsapp.png" alt=""class="logonone"></a></div>
+  <a href="https://www.instagram.com/sanatasker/"><img src="" alt="" ></a>
+   <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="" alt=""class="logonone"></a>
+   <a href="https://wa.link/7mp5ai" target="_blank"><img src="" alt=""class="logonone"></a></div>
 
     <div>
           <img src="../assets/LOGOSANATAKER.png" alt="LOGO">
