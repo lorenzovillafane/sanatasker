@@ -1,27 +1,11 @@
-<template>
-  <div id="app">
-    <Header />
-    <main>
-      <Content />
-    
-    </main>
-  </div>
-</template>
-
-<script>
-import Content from './components/Content.vue';
-import Header from './components/Header.vue';
-
-
-export default {
-  components: {
-    Header,
-    Content,
-   
-  },
-};
+<script setup>
+import Home from './components/Home.vue'
 </script>
 
-<style>
-/* Añade estilos específicos del App si es necesario */
+<template>
+  <Home/>
+</template>
+
+<style >
+
 </style>
