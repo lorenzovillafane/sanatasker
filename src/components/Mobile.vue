@@ -11,7 +11,7 @@
         <section id="section1">
           <h1>Delegar puede ser una forma sencilla de encontrar paz mental </h1>
           <video 
-              src="../assets/juli2.mp4" 
+              src="@/assets/juli2.mp4" 
               controls
              
               class="hero-video"
@@ -92,6 +92,26 @@
   $ff-serif: 'Roca One Thin', serif;
   $ff-sans-serif: 'Roboto', sans-serif;
   $color-accent: #a9dfbf;
+  .controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+
+  button {
+    padding: 10px 20px;
+    background-color: #156669;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: #0d4d4e;
+    }
+  }
+}
 
     @font-face {
       font-family: 'Roca One Thin';
