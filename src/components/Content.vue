@@ -124,7 +124,7 @@
         heroSections: [
           {
             type: "text-video",
-            video: "src/assets/juli.mp4",
+            video: "src/assets/juli2.mp4",
             text: "Delegar puede ser una forma sencilla de encontrar paz mental",
           },
           {
