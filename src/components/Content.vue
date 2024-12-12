@@ -159,7 +159,7 @@
   }
 h5{ font-family: 'Roca One Thin';
 color: #156669;
-font-size: 2rem;}
+font-size: 1.5rem;}
 header {
   position: fixed;
   top: 0;
@@ -181,9 +181,9 @@ align-items: center;}
 .socialContainer{width: 300px;}
 header img {
   margin: 0;
-width: 120px;
+width: 100px;
 }
-a img{width: 40px;
+header a img{width: 32px;
 margin-left: 15px;
 margin-top: 15px;
 margin-right: 15px;}
