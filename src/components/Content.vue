@@ -97,8 +97,8 @@
         <input type="email"  name="email" placeholder="Tu correo" />
         <textarea placeholder="Introduzca un mensaje"></textarea>
         <button type="submit">Enviar</button>
-        <input type="submit" value="Enviar">
-        <input type="hidden" name="_next"value="http://localhost:8000">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next"value="https://sanatasker.vercel.app/">
       </form>
       <div class="footer__socials">
         <a href="https://www.instagram.com/sanatasker/" target="_blank"><img src="/assets/icons/instagramverde.png" alt=""></a>
