@@ -124,25 +124,25 @@
         heroSections: [
           {
             type: "text-video",
-            video: "../assets/juli2.mp4",
+            video: "src/assets/juli2.mp4",
             text: "Delegar puede ser una forma sencilla de encontrar paz mental",
           },
           {
             type: "text-image2",
-            image: "../assets/JULI-removebg-preview.png",
+            image: "src/assets/JULI-removebg-preview.png",
             text: "Hola, soy Juli creadora de Sanatasker. Este proyecto surge de la idea de ayudarte a aliviar el peso de vivir con una enfermedad crónica o acompañar a alguien en esta situación, de modo que la responsabilidad que esto implica no sea una carga adicional en tu vida, ni en la de quienes te rodean. Mi compromiso es brindarte apoyo desde la organización y la empatía para centrarte en lo que realmente importa y sentirte tranquilo en cada paso del camino.",
           },
           {
             type: "gallery",
             items: [
-              { image: "../assets/Girl stands near huge calendar.png", title: "Gestion y organizacion de turnos" },
-              { image: "../assets/Girl with a Letter.png", title: "Recordatorios" },
-              { image: "../assets/Woman working on computer and having phone conversation.png", title: "Facilitar tramites con obras sociales" },
+              { image: "src/assets/Girl stands near huge calendar.png", title: "Gestion y organizacion de turnos" },
+              { image: "src/assets/Girl with a Letter.png", title: "Recordatorios" },
+              { image: "src/assets/Woman working on computer and having phone conversation.png", title: "Facilitar tramites con obras sociales" },
             ],
           },
           {
             type: "testimonial",
-            image: "../assets/agos.png",
+            image: "src/assets/agos.png",
             quote: "Descubrir que tenía una enfermedad crónica rara fue un golpe inesperado. En un momento crítico, Sanatasker (o Juli, como la llamo) me ayudó a organizar mi caótica agenda médica con empatía y dedicación. Gracias a su apoyo, hoy puedo enfocarme en ser feliz, más allá de mi enfermedad.",
             author: "- Agostina",
           },
