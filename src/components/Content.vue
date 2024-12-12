@@ -34,16 +34,11 @@
         <div class="hero-inner">
           <figure id="background"></figure>
           <div class="hero__title">
-            <template v-if="section.type === 'text-video'" id="sectionVideo">
-              <img src="/assets/splashgreen.png" id="splashgreen" alt="">
-            <video 
-              :src="section.video" 
-              controls
-             
-              class="hero-video"
-            ></video>
-            <p id="pSectionVideo">{{ section.text }}</p>
-          </template>
+            <template v-if="section.type === 'text-image'" id="sectionOne" >
+              <img :src="section.image" alt="Imagen hero" class="hero-img" />
+              <p id="pSectionOne">{{ section.text }}</p>
+            </template>
+         
             <template v-if="section.type === 'text-image2'" id="sectionTwo" >
              <div><h3>Sobre Mi</h3>
                 <p id="pSectionTwo">{{ section.text }}</p>
@@ -123,8 +118,8 @@
       return {
         heroSections: [
           {
-            type: "text-video",
-            video: "/assets/juli2.mp4",
+            type: "text-image",
+            image: "/assets/intro-illustration_qneuer.svg",
             text: "Delegar puede ser una forma sencilla de encontrar paz mental",
           },
           {
@@ -492,11 +487,11 @@ transform: scale(1.1);
     }
   }
 
-  .hero-video {
+  .hero-img {
   width: 30%;
-  margin-left: 150px;
+  margin-left: 100px;
   height: auto;
-  max-height: 300px; /* Ajusta según tus necesidades */
+  max-height: 500px; /* Ajusta según tus necesidades */
   border-radius:10px;
 
 }
@@ -506,7 +501,7 @@ margin: 0;
 padding: 0;
 width: 800px;}
 
-#pSectionVideo {
+#pSectionOne {
   margin: 50px;
     font-size: 6rem;
     width: 70%;
@@ -749,7 +744,7 @@ display: flex;
 }
 }
 @media (max-width: 1450px) {
-  #pSectionVideo {
+  #pSectionOne {
   margin: 50px;
     font-size: 5rem;
     width: 70%;
@@ -782,7 +777,7 @@ display: flex;
     width: 350px;
     margin-left: 4rem;
   }
-  #pSectionVideo {
+  #pSectionOne {
 
     font-size: 4.5rem;
 
@@ -805,7 +800,7 @@ figure.snip1197 blockquote {
 .gallery p{font-size: 1.8rem;}
 }
 @media (max-width: 1060px) {
-  #pSectionVideo {
+  #pSectionOne {
   margin: 50px;
     font-size: 3.5rem;
     width: 70%;
@@ -819,7 +814,7 @@ figure.snip1197 blockquote {
 
 
  
-  .hero-video {
+  .hero-img {
     width: 30%;
     margin-left: 100px;
     margin-right: auto;
@@ -832,7 +827,7 @@ figure.snip1197 blockquote {
     margin-right: auto;
   }
 
-  #pSectionVideo,
+  #pSectionOne,
   #pSectionTwo {
  
     width: 90%;
