@@ -97,11 +97,13 @@
   
           <div class="footer__form">
       
-      <form>
-        <input type="text" placeholder="Nombre" />
-        <input type="email" placeholder="Tu correo" />
+      <form action="https://formsubmit.co/ajulietaruth@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Nombre" />
+        <input type="email"  name="email" placeholder="Tu correo" />
         <textarea placeholder="Introduzca un mensaje"></textarea>
         <button type="submit">Enviar</button>
+        <input type="submit" value="Enviar">
+        <input type="hidden" name="_next"value="http://localhost:8000">
       </form>
       <div class="footer__socials">
         <a href="https://www.instagram.com/sanatasker/" target="_blank"><img src="../assets/icons/instagramverde.png" alt=""></a>
