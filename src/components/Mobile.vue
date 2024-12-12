@@ -3,7 +3,7 @@
     <div class="containerHeader">
     
       <div>
-            <img src="../assets/LOGOSANATAKER.png" alt="LOGO">
+            <img src="/assets/LOGOSANATAKER.png" alt="LOGO">
       </div>
       </div>
     </header>
@@ -11,7 +11,7 @@
         <section id="section1">
           <h1>Delegar puede ser una forma sencilla de encontrar paz mental </h1>
           <video 
-              src="../assets/juli2.mp4" 
+              src="/assets/juli2.mp4" 
               controls
              
               class="hero-video"
@@ -19,23 +19,23 @@
         </section>
         <section id="section2">
             <h3>Sobre mi</h3>
-            <div id="sobremi"><img src="../assets/JULI-removebg-preview.png" alt="">
+            <div id="sobremi"><img src="/assets/JULI-removebg-preview.png" alt="">
                 <p>Hola, soy Juli creadora de Sanatasker. Este proyecto surge de la idea de ayudarte a aliviar el peso de vivir con una enfermedad crónica o acompañar a alguien en esta situación, de modo que la responsabilidad que esto implica no sea una carga adicional en tu vida, ni en la de quienes te rodean. Mi compromiso es brindarte apoyo desde la organización y la empatía para centrarte en lo que realmente importa y sentirte tranquilo en cada paso del camino.</p>
                 
             </div>
         </section>
         <section id="section3">
             <h3>Servicios</h3>
-            <img src="../assets/Woman working on computer and having phone conversation.png" alt="">
+            <img src="/assets/Woman working on computer and having phone conversation.png" alt="">
             <p>Facilitar tramites con obras sociales</p>
-            <img src="../assets/Girl stands near huge calendar.png" alt="">
+            <img src="/assets/Girl stands near huge calendar.png" alt="">
             <p>Gestion y organizacion de turnos </p>
-            <img src="../assets/Girl with a Letter.png" alt="">
+            <img src="/assets/Girl with a Letter.png" alt="">
             <p>Recordatorios </p>
         </section>
         <section id="section4">
             <h3>Testimonios</h3>
-            <img src="../assets/agos.png" alt="">
+            <img src="/assets/agos.png" alt="">
            
             <p>Descubrir que tenía una enfermedad crónica rara fue un golpe inesperado. En un momento crítico, Sanatasker (o Juli, como la llamo) me ayudó a organizar mi caótica agenda médica con empatía y dedicación. Gracias a su apoyo, hoy puedo enfocarme en ser feliz, más allá de mi enfermedad.</p>
              <h5>Agostina<span>- Diagnostico, enfermedad inflamatoria intestinal</span></h5>
@@ -54,9 +54,9 @@
         <button type="submit">Enviar</button>
       </form>
       <div class="footer__socials">
-        <a href="https://www.instagram.com/sanatasker/" target="_blank"><img src="../assets/icons/instagramverde.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="../assets/icons/linkedinverde.png" alt=""></a>
-        <a href="https://wa.link/7mp5ai" target="_blank"><img src="../assets/icons/whatsappverde.png" alt=""></a>
+        <a href="https://www.instagram.com/sanatasker/" target="_blank"><img src="/assets/icons/instagramverde.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="/assets/icons/linkedinverde.png" alt=""></a>
+        <a href="https://wa.link/7mp5ai" target="_blank"><img src="/assets/icons/whatsappverde.png" alt=""></a>
       </div>
     </div>
         </article>

@@ -7,7 +7,7 @@
    <a href="https://wa.link/7mp5ai" target="_blank"><img src="" alt=""class="logonone"></a></div>
 
     <div>
-          <img src="../assets/LOGOSANATAKER.png" alt="LOGO">
+          <img src="/assets/LOGOSANATAKER.png" alt="LOGO">
     </div>
 
   <div class="socialContainer">
@@ -17,9 +17,9 @@
     <div>
 
     </div>
-    <a  href="https://www.instagram.com/sanatasker/" target="_blank"><img src="../assets/icons/instagram-50.png" alt=""></a>
-   <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="../assets/icons/icons8-linkedin-50.png" alt=""></a>
-   <a href="https://wa.link/7mp5ai" target="_blank"><img src="../assets/icons/icons8-whatsapp-50.png" alt=""></a>
+    <a  href="https://www.instagram.com/sanatasker/" target="_blank"><img src="/assets/icons/instagram-50.png" alt=""></a>
+   <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="/assets/icons/icons8-linkedin-50.png" alt=""></a>
+   <a href="https://wa.link/7mp5ai" target="_blank"><img src="/assets/icons/icons8-whatsapp-50.png" alt=""></a>
   </div>
    
     </div>
@@ -35,7 +35,7 @@
           <figure id="background"></figure>
           <div class="hero__title">
             <template v-if="section.type === 'text-video'" id="sectionVideo">
-              <img src="../assets/splashgreen.png" id="splashgreen" alt="">
+              <img src="/assets/splashgreen.png" id="splashgreen" alt="">
             <video 
               :src="section.video" 
               controls
@@ -106,9 +106,9 @@
         <input type="hidden" name="_next"value="http://localhost:8000">
       </form>
       <div class="footer__socials">
-        <a href="https://www.instagram.com/sanatasker/" target="_blank"><img src="../assets/icons/instagramverde.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="../assets/icons/linkedinverde.png" alt=""></a>
-        <a href="https://wa.link/7mp5ai" target="_blank"><img src="../assets/icons/whatsappverde.png" alt=""></a>
+        <a href="https://www.instagram.com/sanatasker/" target="_blank"><img src="/assets/icons/instagramverde.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/julieta-aranda-ruth/" target="_blank"><img src="/assets/icons/linkedinverde.png" alt=""></a>
+        <a href="https://wa.link/7mp5ai" target="_blank"><img src="/assets/icons/whatsappverde.png" alt=""></a>
       </div>
     </div>
         </article>
@@ -124,25 +124,25 @@
         heroSections: [
           {
             type: "text-video",
-            video: "src/assets/juli2.mp4",
+            video: "/assets/juli2.mp4",
             text: "Delegar puede ser una forma sencilla de encontrar paz mental",
           },
           {
             type: "text-image2",
-            image: "src/assets/JULI-removebg-preview.png",
+            image: "/assets/JULI-removebg-preview.png",
             text: "Hola, soy Juli creadora de Sanatasker. Este proyecto surge de la idea de ayudarte a aliviar el peso de vivir con una enfermedad crónica o acompañar a alguien en esta situación, de modo que la responsabilidad que esto implica no sea una carga adicional en tu vida, ni en la de quienes te rodean. Mi compromiso es brindarte apoyo desde la organización y la empatía para centrarte en lo que realmente importa y sentirte tranquilo en cada paso del camino.",
           },
           {
             type: "gallery",
             items: [
-              { image: "src/assets/Girl stands near huge calendar.png", title: "Gestion y organizacion de turnos" },
-              { image: "src/assets/Girl with a Letter.png", title: "Recordatorios" },
-              { image: "src/assets/Woman working on computer and having phone conversation.png", title: "Facilitar tramites con obras sociales" },
+              { image: "/assets/Girl stands near huge calendar.png", title: "Gestion y organizacion de turnos" },
+              { image: "/assets/Girl with a Letter.png", title: "Recordatorios" },
+              { image: "/assets/Woman working on computer and having phone conversation.png", title: "Facilitar tramites con obras sociales" },
             ],
           },
           {
             type: "testimonial",
-            image: "src/assets/agos.png",
+            image: "/assets/agos.png",
             quote: "Descubrir que tenía una enfermedad crónica rara fue un golpe inesperado. En un momento crítico, Sanatasker (o Juli, como la llamo) me ayudó a organizar mi caótica agenda médica con empatía y dedicación. Gracias a su apoyo, hoy puedo enfocarme en ser feliz, más allá de mi enfermedad.",
             author: "- Agostina",
           },
