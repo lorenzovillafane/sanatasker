@@ -11,7 +11,7 @@
         <section id="section1">
           <h1>Delegar puede ser una forma sencilla de encontrar paz mental </h1>
           <video 
-              src="../assets/juli.mp4" 
+              src="../assets/juli2.mp4" 
               controls
              
               class="hero-video"
