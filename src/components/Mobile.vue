@@ -45,7 +45,7 @@
         <form action="https://formsubmit.co/ajulietaruth@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Nombre" />
         <input type="email"  name="email" placeholder="Tu correo" />
-        <textarea type="text" placeholder="Introduzca un mensaje"></textarea>
+        <textarea  name="comments"  placeholder="Introduzca un mensaje"></textarea>
         <button type="submit">Enviar</button>
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next"value="https://sanatasker.vercel.app/">
