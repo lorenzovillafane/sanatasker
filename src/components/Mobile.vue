@@ -230,8 +230,8 @@ background-color:#D8EFD3 ;
 }
 #section4 p{font-size: 1.5rem;
     color: #156669;
-font-weight: 800;
-    font-family:'Roca One Thin';
+
+
 background-color: #F1F8E8 ;;
 padding: 5%;
 width: 70%;
@@ -256,7 +256,7 @@ width: 70%;}
       display: flex;
       flex-direction: column;
       gap: 1rem;
-  
+      font-family: $ff-serif;
       input,
       textarea {
         width: 100%;
@@ -264,6 +264,7 @@ width: 70%;}
         font-size: 1rem;
         border: 1px solid #ddd;
         border-radius: 5px;
+        font-family: $ff-serif;
       }
   
       button {
@@ -274,6 +275,7 @@ width: 70%;}
         font-size: 1rem;
         cursor: pointer;
         border-radius: 5px;
+        font-family: $ff-serif;
         transition: background-color 0.3s ease;
   
         &:hover {

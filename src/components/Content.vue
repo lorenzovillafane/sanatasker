@@ -396,10 +396,10 @@ transform: scale(1.1);
     position: relative;
     padding: 25px 50px 25px 50px;
     font-size: 2rem;
-    font-weight: 500;
     text-align: left;
     margin: 0;
     line-height: 1.6em;
+    font-family: $ff-sans-serif;
   }
   
   figure.snip1197 blockquote:before,
@@ -644,7 +644,7 @@ display: flex;
     top: -100px;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 101px;
     background-color: white;
     z-index: 99;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -660,6 +660,7 @@ display: flex;
   }
   > blockquote {
     margin: 3rem 0;
+    
   }
 }
 
